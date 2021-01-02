@@ -1,0 +1,25 @@
+{% load icons %}
+<div class="card mt-1 c mb-1">
+    <div class="card-header p-2 bg-dark text-light shadow " id="m_two" onclick="viewCrime()"> {% icon 'detailsearch' %}&nbsp;<span id="two">Search	&nbsp;Crime	&nbsp;Information</span></div>
+    <!-- Message -->
+
+    <div class="card-body" id="view_crime_info">
+
+        <div class="form-group" id="category"> 
+            <input type="text" name="search" id="search" class="form-control-input  form-control-sm" style="width:100%; " placeholder="Search by Location or Crime">
+          </div>
+      
+        <div class="form-check">
+            <input class="form-check-input" type="checkbox" value="" id="default1">
+            <label class="form-check-label" for="default1">
+              Search by Country, Province or Narrative
+            </label>
+          </div>
+        </div>
+</div>
+<div class="card mt-1 c mb-1" id="noexp">
+    <div class="card-header p-2 bg-dark text-light shadow " id="m_three" onclick="locationInfo()">{% icon 'detailview' %}  <span id="three"> Overview</span></div>
+    <div class="card-body" id="location_info">
+    {% include 'snippets/display.html' %} 
+    </div>
+</div>

@@ -1,0 +1,10 @@
+<div class="card mt-auto c mb-1">
+    {% load icons %}
+    <div class="card-header p-2 bg-dark text-light shadow " id="m_four" onclick="map_view()">{% icon 'mapsearch' %}&nbsp; <span id="four"> Map Visual Search</span></div>
+    <div class="card-body" id="map_view">
+        <div class="form-group" id="category"> 
+            <input type="text" name="marker_search" id="marker_search" class="form-control-input  form-control-sm" style="width:100%; " placeholder="Search by Location or Crime">
+          </div>
+    </div>
+</div>
+{% include 'snippets/map.html' %}
